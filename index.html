@@ -3,20 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Whack an Imp</title>
-        <!-- physics -->
-        <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
-    </head>
-    <body>
         <!--aframe itself-->
         <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+        <!-- physics -->
+        <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
+    </head>
+    <body>
 
         <!--scene with stats,physics turned on and look controls with a height of 1.5 meters
             (corresponding with the average height of most humans)-->
-        <a-scene stats physics="debug: true">
+        <a-scene stats physics="debug: true;">
             <a-entity camera look-controls position="0 1.5 0">
                 <a-cursor></a-cursor>
                 </a-entity position="0 0 -3" id="weapon">
-                    <a-box color="blue" width="0.25" height='0.5' depth='3'></a-box>
+                    <a-box color="blue" width="0.25" height='0.5' depth='3' static-body></a-box>
                 </a-entity>
             <!-- dynamic sphere -->
             <a-entity id='ball'
