@@ -17,14 +17,14 @@
             on = (elem, type, hand) => elem.addEventListener(type, hand);
         </script>
         <!--scene with stats,physics turned on and look controls with a height of 1.5 meters
-            (corresponding with the average height of most humans)-->
+        (corresponding with the average height of most humans)-->
         <a-scene stats physics="debug: true;">
             <a-entity camera look-controls position="0 1.5 0">
                 <a-cursor></a-cursor>
                 </a-entity position="0 0 -3" id="weapon">
                     <a-box color="blue" width="0.25" height='0.5' depth='3' static-body></a-box>
                 </a-entity>
-            <!-- dynamic sphere -->
+            <!-- dynamic sphere/imp -->
             <a-entity id='imp'
                     position="0 1 -4"
                     material="color:green;"
@@ -37,5 +37,6 @@
             </a-plane>
         </a-scene>
         <script src="imp.js"></script>
+        <script src="weapon.js"></script>
     </body>
 </html>

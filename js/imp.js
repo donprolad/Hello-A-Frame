@@ -1,7 +1,7 @@
 let hit = false;
 let resetId = 0;
 
-// Function to reset the imp
+// Function to reset the imp position.
 
 const resetImp = () => {
     clearTimeout(resetId)
